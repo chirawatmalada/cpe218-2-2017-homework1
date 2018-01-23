@@ -169,7 +169,7 @@ implements TreeSelectionListener{
                     case '*': return left * right;
                     case '-': return left - right;
                     case '/': return left / right;
-//                    default  : return left + right;
+
                 }
             }
             else{
@@ -255,7 +255,7 @@ implements TreeSelectionListener{
     public String inorder(DefaultMutableTreeNode node) {
 		if (node == null) return "null";
 		if(node == ThisNode && !node.isLeaf()) {
-			return 	inorder(node.getNextNode()) + node.toString() + inorder(node.getNextNode().getNextSibling()); //letf node right
+			return 	inorder(node.getNextNode()) + node.toString() + inorder(node.getNextNode().getNextSibling());
 		}else if(Chckoper(node.toString().charAt(0)) && node != top) {
 			return "(" + inorder(node.getNextNode()) + node.toString() + inorder(node.getNextNode().getNextSibling()) + ")";
 		}else {
