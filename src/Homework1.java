@@ -87,9 +87,7 @@ implements TreeSelectionListener{
 		});
     }
 
-  //  private String calculate(DefaultMutableTreeNode ThisNode) {
-
-   // }
+ 
 
     public static class Node
     {
