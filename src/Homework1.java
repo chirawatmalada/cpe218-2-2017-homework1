@@ -51,8 +51,7 @@ implements TreeSelectionListener{
 
 		//Create the scroll pane and add the tree to it.
 		JScrollPane treeView = new JScrollPane(tree);
-
-		//Create the HTML viewing pane.
+		
 		htmlPane = new JEditorPane();
 
 		JScrollPane htmlView = new JScrollPane(htmlPane);
